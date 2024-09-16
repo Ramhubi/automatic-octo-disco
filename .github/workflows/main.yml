@@ -1,0 +1,29 @@
+import time
+import os
+
+# Define the string to animate
+luffy_string = "Monkey D. Luffy"
+
+# Define the animation frames
+frames = [
+    "_______",
+    "|       |",
+    "|  O   O  |",
+    "|  /__/  |",
+    "| /   \ |",
+    "| |   | |",
+    "| |___| |",
+    "|_______|"
+]
+
+# Clear the terminal screen
+os.system("clear")
+
+# Animate the string
+for i in range(len(frames)):
+    print(luffy_string)
+    print(frames[i])
+    time.sleep(0.5)  # pause for 0.5 seconds
+    os.system("clear")  # clear the screen
+
+print("Monkey D. Luffy is ready for adventure!")
